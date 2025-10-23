@@ -1,22 +1,19 @@
 import time
-import sys
-sys.set_int_max_str_digits(1000000)
 
 a=0
 b=1
 n=0
 i=0
+elapsed = 0;
 
 start = time.perf_counter()
-while(True):
+while(elapsed <= 1):
     n=a+b
     a=b
     b=n
     i=i+1
     end = time.perf_counter()
-    if (end-start > 1):
-        break
+    elapsed = end - start
 
-print(n)
-print(i)
+print(f"fib[{i}]")
 print(end-start)
