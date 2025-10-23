@@ -4,7 +4,7 @@ a=0
 b=1
 n=0
 i=0
-elapsed = 0;
+elapsed = 0
 
 start = time.perf_counter()
 while(elapsed <= 1):
