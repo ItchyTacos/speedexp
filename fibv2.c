@@ -57,7 +57,7 @@ int main(void){
 
         i++;
 
-        if ((i % 100000) == 0){
+        if ((i % 30000) == 0){
             clock_t end = clock();
             elapsed = (double)(end - start) / CLOCKS_PER_SEC;
         }
